@@ -40,6 +40,8 @@ func (e *InputEvent) String() string {
 	)
 }
 
+var eventsize = int(unsafe.Sizeof(InputEvent{}))
+
 // InputID ...
 type InputID struct {
 	BusType uint16
